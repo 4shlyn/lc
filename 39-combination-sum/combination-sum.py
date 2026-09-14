@@ -2,7 +2,6 @@ class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         
         def backtrack(path, pSum, start):
-            print(path)
             if pSum == target:
                 combinations.append(path.copy())
                 return
